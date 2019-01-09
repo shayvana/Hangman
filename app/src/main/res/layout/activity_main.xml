@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hangman.MainActivity">
+
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/letsplay"
+            android:layout_centerHorizontal="true"
+            android:textSize="29sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/letsplay"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hangman6"
+            android:layout_below="@+id/letsplay"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/hangmanpic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_ _ _ _ _ _"
+            android:layout_centerHorizontal="true"
+            android:textSize="45sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/hangmanpic"
+            android:id="@+id/word"
+            />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_height="50dp"
+            android:layout_width="130dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_below="@id/word"/>
+
+        <Button
+            android:id="@+id/guess"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/input"
+            android:layout_below="@id/word"
+            android:layout_marginTop="30dp"
+            android:text="@string/guess"
+            android:onClick="submitAnswer"/>
+
+        <Button
+            android:id="@+id/restart"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/guess"
+            android:layout_below="@id/word"
+            android:layout_marginTop="30dp"
+            android:text="@string/restart"
+            android:onClick="restart"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guessedAlready"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/input"
+            android:id="@+id/guessesLeft"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/guessesLeft"
+            android:id="@+id/guesses"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

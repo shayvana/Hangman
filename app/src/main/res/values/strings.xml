@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string name="letsplay">Let\'s play!</string>
+    <string name="guess">Guess</string>
+    <string name="restart">Restart</string>
+    <string name="guessedAlready">You have guessed (6 guesses left): </string>
+    <string-array name="words">
+        <item>serendipity</item>
+        <item>semblance</item>
+        <item>zugzwang</item>
+        <item>prophylaxis</item>
+        <item>thorax</item>
+        <item>loaf</item>
+        <item>chess</item>
+    </string-array>
+</resources>
